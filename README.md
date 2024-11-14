@@ -35,7 +35,7 @@ This script changes the wallpaper to a random image from a predefined set of ima
    ```
 2. Run the script:
    ```bash
-   ./script.sh
+   ./scriptname.sh
    ```
 3. Set an alias (Optional):
 
