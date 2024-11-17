@@ -9,7 +9,6 @@ output=$(dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify \
 spotify_url=$(echo "$output" | grep -A 1 "xesam:url" | tail -n 1 | awk -F '"' '{print $2}')
 
 if [[ -n $spotify_url ]]; then
-    echo "Spotify URL found: $spotify_url"
     echo "Starting download with spotdl..."
     
     spotdl --output "$download_folder/" "$spotify_url"

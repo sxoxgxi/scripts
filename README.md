@@ -25,6 +25,15 @@ This script changes the wallpaper to a random image from a predefined set of ima
 - This script assumes you have a folder of images you'd like to use as wallpapers. You can specify the folder in the script.
 - It randomly selects an image from the folder and sets it as the desktop wallpaper.
 
+### 3. **warp_manager.sh**
+
+This script manages the `warp-svc` service for Cloudflare WARP, allowing you to start, stop, and check the WARP status.
+
+### How to Use:
+
+- The script uses `systemctl` to manage the `warp-svc` service and `curl` to check if WARP is active or inactive by querying `https://www.cloudflare.com/cdn-cgi/trace/`.
+- It supports synonyms for commands (`start`, `enable`, `on` for starting and `stop`, `disable`, `off` for stopping).
+
 ---
 
 ## Usage for Scripts:
@@ -46,6 +55,5 @@ This script changes the wallpaper to a random image from a predefined set of ima
 
    # Then add following to the file
 
-   alias spotgrab="bash /path/to/scripts/spotgrab.sh"
-   alias wallpaper="bash /path/to/scripts/set_random_wall.sh"
+   alias scripalias="bash /path/to/scripts/scriptname.sh"
    ```
