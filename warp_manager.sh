@@ -20,7 +20,7 @@ start_warp() {
     if [[ "$warp_status" == "on" ]]; then
         display_status "WARP is already ON ✅"
     else
-        display_status "Starting warp-svc..."
+        display_status "Starting warp-svc... \n"
         sudo systemctl start warp-svc
         sleep 2
         if [[ "$(check_warp_status)" == "on" ]]; then
@@ -37,7 +37,7 @@ stop_warp() {
     if [[ "$warp_status" == "off" ]]; then
         display_status "WARP is already OFF ❌"
     else
-        display_status "Stopping warp-svc..."
+        display_status "Stopping warp-svc... \n"
         sudo systemctl stop warp-svc
         sleep 2
         if [[ "$(check_warp_status)" == "off" ]]; then

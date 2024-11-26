@@ -34,6 +34,15 @@ This script manages the `warp-svc` service for Cloudflare WARP, allowing you to 
 - The script uses `systemctl` to manage the `warp-svc` service and `curl` to check if WARP is active or inactive by querying `https://www.cloudflare.com/cdn-cgi/trace/`.
 - It supports synonyms for commands (`start`, `enable`, `on` for starting and `stop`, `disable`, `off` for stopping).
 
+### 4. **alacritty_opacity.sh**
+
+This script allows you to set the opacity or transparency of alacritty terminal window.
+
+### How to Use:
+
+- The script modifies the `~/.config/alacritty/alacritty.toml` to alter the opacity of the terminal window.
+- It updates the opacity by `0.01` depending on `i` for increasing and `d` for decreasing.
+
 ---
 
 ## Usage for Scripts:
