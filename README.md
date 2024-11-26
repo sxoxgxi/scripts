@@ -6,7 +6,7 @@ This folder contains a collection of useful shell scripts that automate certain 
 
 ## Scripts
 
-### 1. **spotgrab.sh**
+### 1. **grabsong.sh**
 
 This script extracts the currently playing song's Spotify URL and automatically downloads it using `spotdl`.
 
