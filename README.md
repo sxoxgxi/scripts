@@ -41,7 +41,7 @@ This script allows you to set the opacity or transparency of alacritty terminal 
 ### How to Use:
 
 - The script modifies the `~/.config/alacritty/alacritty.toml` to alter the opacity of the terminal window.
-- It updates the opacity by `0.01` depending on `i` for increasing and `d` for decreasing.
+- It updates the opacity by `0.01` depending on `i` for increasing, `d` for decreasing, `full` for setting opacity to `1` and `reset` to revert back to `0.9`.
 
 ---
 
