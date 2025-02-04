@@ -8,7 +8,9 @@ This folder contains a collection of useful shell scripts that automate certain 
 
 ### 1. **grabsong.sh**
 
-This script extracts the currently playing song's Spotify URL and automatically downloads it using `spotdl`.
+> Note: This script is available as a GNOME shell extension. Please see the [Grab Song](https://github.com/sxoxgxi/grabsong) for more details.
+
+- This script extracts the currently playing song's Spotify URL and automatically downloads it using `spotdl`.
 
 #### How to Use:
 
