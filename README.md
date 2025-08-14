@@ -18,29 +18,20 @@ This folder contains a collection of useful shell scripts that automate certain 
 - The script grabs the Spotify URL of the currently playing song through the `dbus-send` command.
 - It will then download the song into your `~/Music` folder (or another folder you specify in the script).
 
-### 2. **set_random_wall.sh**
-
-This script changes the wallpaper to a random image from a predefined set of images in a folder.
-
-### How to Use:
-
-- This script assumes you have a folder of images you'd like to use as wallpapers. You can specify the folder in the script.
-- It randomly selects an image from the folder and sets it as the desktop wallpaper.
-
-### 3. **warp_manager.sh**
+### 2. **warp_manager.sh**
 
 This script manages the `warp-svc` service for Cloudflare WARP, allowing you to start, stop, and check the WARP status.
 
-### How to Use:
+#### How to Use:
 
 - The script uses `systemctl` to manage the `warp-svc` service and `curl` to check if WARP is active or inactive by querying `https://www.cloudflare.com/cdn-cgi/trace/`.
 - It supports synonyms for commands (`start`, `enable`, `on` for starting and `stop`, `disable`, `off` for stopping).
 
-### 4. **alacritty_opacity.sh**
+### 3. **alacritty_opacity.sh**
 
 This script allows you to set the opacity or transparency of alacritty terminal window.
 
-### How to Use:
+#### How to Use:
 
 - The script modifies the `~/.config/alacritty/alacritty.toml` to alter the opacity of the terminal window.
 - It updates the opacity by `0.01` depending on `i` for increasing, `d` for decreasing, `full` for setting opacity to `1` and `reset` to revert back to `0.9`.
